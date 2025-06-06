@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chọn phương thức thanh toán</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl76gzyJUh0IkDDFtYjY2MuEBw7ETLv6ilXA7rDoREeA&s" class="logo" alt="Garena">
+    <div class="support">Chăm sóc khách hàng ☰</div>
+  </header>
+
+  <div class="banner">
+    <img src="https://deo.shopeemobile.com/shopee/digital-product/static/202502/d83zktjn7p17.jpg" alt="ShopeePay Banner">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB75skpX8JEvnGmQzNGVEEhSrd1DRbo4mdgw&s" class="qr" alt="QR Code">
+  </div>
+
+  <section class="game-title">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB75skpX8JEvnGmQzNGVEEhSrd1DRbo4mdgw&s" alt="Free Fire">
+    <span>Free Fire</span>
+  </section>
+
+  <section class="pay-method">
+    <h3>Chọn Phương thức thanh toán</h3>
+
+    <div class="pay-option"><img src="https://cdn.garenanow.com/webmain/static/payment_center/vn/menu/vnshopeepay_mb.png"><span>Ví ShopeePay</span><span class="tag">Hot</span></div>
+    <div class="pay-option"><img src="https://cdn-gop.garenanow.com/webmain/static/open_platform/images/icon_ppc.png"><span>Thẻ Garena</span><span class="tag">Hot</span></div>
+    <div class="pay-option"><img src="https://cdn-gop.garenanow.com/webmain/static/open_platform/images/icon_gs.png"><span>Garena Sò</span></div>
+    <div class="pay-option"><img src="https://cdn-gop-garenanow-com.obs.ap-southeast-3.myhuaweicloud.com/cdn.garenanow.com/webmain/static/payment_center/vn/menu/QR-pay-MO.png"><span>QR Pay</span></div>
+                                                                                                                                                           <div class="pay-option" onclick="window.location.href='atm.html'">
+                                                                                                                                                             <img src="https://cdn-icons-png.flaticon.com/512/3416/3416073.png" style="background:white; border-radius:10px;">
+                                                                                                                                                             <span>ATM-iBanking</span>
+                                                                                                                                                           </div>
+  </section>
+
+  <script>
+    const userId = localStorage.getItem('gameUserId');
+    if (userId) {
+      document.getElementById('userDisplay').innerText = `ID: ${userId}`;
+    }
+  </script>
+</body>
+</html>

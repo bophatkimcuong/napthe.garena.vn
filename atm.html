@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Fire - ATM</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .game-info {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .game-info img {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      margin-right: 10px;
+    }
+
+    .game-info-title {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .pay-desc {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .diamond-pack {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+
+    .diamond-pack:hover {
+      background: #f5f5f5;
+    }
+
+    .diamond-pack img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .diamond-info {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .diamond-info strong {
+      margin-left: 6px;
+    }
+
+    .diamond-price {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .note {
+      font-size: 13px;
+      padding: 10px 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl76gzyJUh0IkDDFtYjY2MuEBw7ETLv6ilXA7rDoREeA&s" class="logo" alt="Garena">
+    <div class="support">Chăm sóc khách hàng ☰</div>
+  </header>
+
+  <div class="game-info">
+    <div class="game-info-title">
+      <img src="https://play-lh.googleusercontent.com/sKh_B4ZLfu0jzqx9z98b2APe2rxDb8dIW-QqFHyS3cpzDK2Qq8tAbRAz3rXzOFtdAw" alt="Free Fire">
+      Free Fire 
+        ATM - iBanking
+    </div>
+    <div class="pay-desc">
+      Thanh toán tiện dụng với thẻ ATM/Ngân hàng điện tử (iBanking).<br>
+      <b>Điều kiện:</b> Khách hàng cần đăng kí dịch vụ <b>Thanh toán trực tuyến</b> với thẻ ATM hoặc <b>Ngân hàng điện tử</b> với Ngân hàng.
+    </div>
+  </div>
+
+  <!-- Danh sách gói kim cương -->
+  <div class="diamond-pack" onclick="goToPay(51, '10 000 ₫')">
+    <div class="diamond-info">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/point.png">
+      Kim Cương <strong>51</strong>
+    </div>
+    <div class="diamond-price">10 000 ₫</div>
+  </div>
+
+  <div class="diamond-pack" onclick="goToPay(106, '20 000 ₫')">
+    <div class="diamond-info">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/point.png">
+      Kim Cương <strong>106</strong>
+    </div>
+    <div class="diamond-price">20 000 ₫</div>
+  </div>
+
+  <div class="diamond-pack" onclick="goToPay(113, '20 000 ₫')">
+    <div class="diamond-info">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/point.png">
+      Kim Cương <strong>113</strong>
+    </div>
+    <div class="diamond-price">20 000 ₫</div>
+  </div>
+
+  <div class="diamond-pack" onclick="goToPay(283, '50 000 ₫')">
+    <div class="diamond-info">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/point.png">
+      Kim Cương <strong>283</strong>
+    </div>
+    <div class="diamond-price">50 000 ₫</div>
+  </div>
+
+  <div class="diamond-pack" onclick="goToPay(566, '100 000 ₫')">
+    <div class="diamond-info">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/point.png">
+      Kim Cương <strong>566</strong>
+    </div>
+    <div class="diamond-price">100 000 ₫</div>
+  </div>
+
+  <div class="diamond-pack" onclick="goToPay(1132, '200 000 ₫')">
+    <div class="diamond-info">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/point.png">
+      Kim Cương <strong>1 132</strong>
+    </div>
+    <div class="diamond-price">200 000 ₫</div>
+  </div>
+
+  <div class="diamond-pack" onclick="goToPay(2830, '500 000 ₫')">
+    <div class="diamond-info">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/point.png">
+      Kim Cương <strong>2 830</strong>
+    </div>
+    <div class="diamond-price">500 000 ₫</div>
+  </div>
+
+  <div class="diamond-pack" onclick="goToPay(5750, '1 000 000 ₫')">
+    <div class="diamond-info">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/point.png">
+      Kim Cương <strong>5 750</strong>
+    </div>
+    <div class="diamond-price">1 000 000 ₫</div>
+  </div>
+
+  <div class="diamond-pack" onclick="goToPay(11500, '2 000 000 ₫')">
+    <div class="diamond-info">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/point.png">
+      Kim Cương <strong>11 500</strong>
+    </div>
+    <div class="diamond-price">2 000 000 ₫</div>
+  </div>
+
+  <!-- Script xử lý chuyển trang -->
+  <script>
+    function goToPay(kc, price) {
+      window.location.href = `pay.html?kc=${kc}&price=${encodeURIComponent(price)}`;
+    }
+  </script>
+
+  <!-- Gói đặc biệt -->
+  <h3 style="padding: 15px 20px; font-size: 18px;">Thẻ Đặc Biệt</h3>
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 10px;">
+    <div class="card-item">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/rebate/0000/000/002/logo.png" alt="Thẻ tuần">
+      <p>Thẻ tuần</p>
+      <strong>50 000 ₫</strong>
+    </div>
+
+    <div class="card-item">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/rebate/0000/004/605/logo.png" alt="Thẻ súng 3N">
+      <p>Thẻ súng nâng cấp - 3 ngày</p>
+      <strong>14 000 ₫</strong>
+    </div>
+
+    <div class="card-item">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/rebate/0000/004/606/logo.png" alt="Thẻ súng 7N">
+      <p>Thẻ súng nâng cấp - 7 ngày</p>
+      <strong>21 000 ₫</strong>
+    </div>
+
+    <div class="card-item">
+      <img src="https://cdn-gop.garenanow.com/gop/app/0000/100/067/rebate/0000/004/607/logo.png" alt="Thẻ súng 30N">
+      <p>Thẻ súng nâng cấp - 30 ngày</p>
+      <strong>57 000 ₫</strong>
+    </div>
+  </div>
+
+  <!-- Gói lên cấp -->
+  <h3 style="padding: 15px 20px; font-size: 18px;">Thẻ Lên Cấp</h3>
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 10px;">
+    <div class="card-item">
+      <img src="https://cdn.shopify.com/s/files/1/0573/1106/9350/files/level-6.png" alt="Cấp 6">
+      <p>Thẻ Lên Cấp - Cấp 6</p>
+      <strong>5 000 ₫</strong>
+    </div>
+
+    <div class="card-item">
+      <img src="https://cdn.shopify.com/s/files/1/0573/1106/9350/files/level-10.png" alt="Cấp 10">
+      <p>Thẻ Lên Cấp - Cấp 10</p>
+      <strong>10 000 ₫</strong>
+    </div>
+
+    <div class="card-item">
+      <img src="https://cdn.shopify.com/s/files/1/0573/1106/9350/files/level-15.png" alt="Cấp 15">
+      <p>Thẻ Lên Cấp - Cấp 15</p>
+      <strong>10 000 ₫</strong>
+    </div>
+
+    <div class="card-item">
+      <img src="https://cdn.shopify.com/s/files/1/0573/1106/9350/files/level-20.png" alt="Cấp 20">
+      <p>Thẻ Lên Cấp - Cấp 20</p>
+      <strong>10 000 ₫</strong>
+    </div>
+  </div>
+
+  <div class="note">© Garena - Đây chỉ là bản mô phỏng giao diện</div>
+
+</body>
+</html>

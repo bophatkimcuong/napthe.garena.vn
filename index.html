@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Đăng nhập ID</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl76gzyJUh0IkDDFtYjY2MuEBw7ETLv6ilXA7rDoREeA&s" class="logo" alt="Garena">
+    <div class="support">Chăm sóc khách hàng ☰</div>
+  </header>
+
+  <div class="login-container">
+    <div class="login-title">
+      <img src="https://play-lh.googleusercontent.com/sKh_B4ZLfu0jzqx9z98b2APe2rxDb8dIW-QqFHyS3cpzDK2Qq8tAbRAz3rXzOFtdAw" alt="Free Fire">
+      <span>ID đăng nhập</span>
+    </div>
+    
+    <input type="text" id="userId" placeholder="ID người chơi" />
+    <button onclick="goToHome()">Đăng nhập</button>
+  </div>
+
+  <footer class="footer">
+    <p><strong>CÔNG TY CỔ PHẦN SHOPEEPAY</strong></p>
+    <p>Giấy CNĐKKD số 0103959912 | Cơ quan cấp: Sở KHĐT TP Hà Nội</p>
+    <p>Địa chỉ: Tầng 5, Tháp 2, Capital Place, 29 Liễu Giai, Ba Đình, Hà Nội</p>
+    <div class="links">
+      <a href="#">Câu hỏi thường gặp</a> · 
+      <a href="#">Điều khoản dịch vụ</a> · 
+      <a href="#">Chính sách bảo mật</a>
+    </div>
+  </footer>
+
+  <script>
+    function goToHome() {
+      const userId = document.getElementById('userId').value;
+      if (!userId) {
+        alert("Vui lòng nhập ID!");
+        return;
+      }
+      // Lưu tạm ID vào localStorage
+      localStorage.setItem('gameUserId', userId);
+      window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>
